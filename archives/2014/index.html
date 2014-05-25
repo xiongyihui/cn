@@ -59,6 +59,68 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-hundred-hardware-projects-idea-evolution" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/cn/2014/05/25/hundred-hardware-projects-idea-evolution/" class="article-date">
+  <time datetime="2014-05-25T11:15:06.000Z" itemprop="datePublished">May 25 2014</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/cn/2014/05/25/hundred-hardware-projects-idea-evolution/">Hundred Hardware Projects: Idea Evolution</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>在kickstarter上有两个非常有趣的项目——<a href="https://www.kickstarter.com/projects/joylabs/makey-makey-an-invention-kit-for-everyone" target="_blank">MaKey MaKey</a>和<a href="https://www.kickstarter.com/projects/863853574/touch-board-interactivity-everywhere" target="_blank">Touch Board</a>，如果你之前没有听过，<br>那就点开链接去看一看，感受一下是怎么让这两个项目分别众筹了$518 106和£122 907。</p>
+<h3 id="MaKey_MaKey">MaKey MaKey</h3>
+<blockquote>
+<p>MaKey MaKey is an invention kit for the 21st century. Turn everyday objects<br>into touchpads and combine them with the internet. It’s a simple invention kit<br>for beginners and exports doing art, engineering, and everything inbetween.</p>
+</blockquote>
+<p>MaKey MaKey可以将很多我们日常生活中的物件变成触摸面板，结合计算机、音乐等可以做出很酷的东西，<br>比如香蕉钢琴。MaKey MaKey用起来很简单，硬件也特别简单，就是触摸按键，却一定可以给你一种wow的感觉。<br>触摸按键已经在我们的日常生活中应用的非常广泛，在手机、电子炉、冰箱上都可以看到，很多时候，我们思想<br>就把它局限在这样的应用范围了。</p>
+<p>这是来自MIT Media Lab的两个PhD学生Jay和Eric的设计，有激起你的想象力和创造欲吗？</p>
+<p><img src="https://s3.amazonaws.com/ksr/assets/001/059/410/2850780e8cbd6639c1bba8f581fc28b5_large.jpg" alt="Banana Piano"></p>
+<h3 id="Touch_Board">Touch Board</h3>
+<blockquote>
+<p>The Touch Board is a tool to make your projects interactive, responsive, smart<br>or just fun. Use the Touch Board to change the world around you by turning<br>almost any material or surface into a sensor. Connect anything conductive to one<br>of its 12 electrodes and trigger a sound via its onboard MP3 player, play a<br>MIDI note or do anything else that you might do with an Arduino or<br>Arduino-compatible device.</p>
+</blockquote>
+<p>Touch Board可以将非常多的材料和表面变成一个sensor，可以将任何导电的东西连接到12个电极来触发一个<br>声音，或发出一个MIDI音，或做其它通过编程自定义的事情。</p>
+<p>有没有在Touch Board上找到MaKey MaKey的影子？虽然它们的描述非常不一样，本质上，它们都是将各种各<br>样的东西变成一个触摸传感器。Touch Board和导电墨水很好的结合在一起，并且加入MP3播放器（脱离计算机），<br>再加上绘画、剪纸等，又开创了一片创造和想象的空间。</p>
+<p>这是来自<a href="http://www.bareconductive.com/about/" target="_blank">Bare Conductive</a>团队的设计，你是否为她们的创意所惊叹？</p>
+<p><img src="https://s3.amazonaws.com/ksr/assets/001/198/404/2cbaca282cc08fc3d7240e07cbdaca32_large.jpg?1381944770" alt="Touch Piano"></p>
+<h2 id="技术视角">技术视角</h2>
+<p>MaKey MaKey的软硬件是完全开放的，所有的设计文件可以在<a href="https://github.com/sparkfun/MaKeyMaKey" target="_blank">Sparkfun的github</a>上找到，<br>硬件上主要由一个MCU、USB硬件、一些大的电阻和一些连接电极构成一个触摸的USB键盘，触摸按键的实现<br>原理如下图所示。</p>
+<p><img src="http://tangram.qiniudn.com/img/capacitive_touch.png" alt="Capacitive Touch"></p>
+<ol>
+<li>MCU的I/O口连接到一个RC电路上</li>
+<li>不断的将I/O口在输出高电平和检测低电平输入间进行切换，不断对电容充/放电，并测量放电时间</li>
+<li>有触摸时，电容增大，放电时间变长，据此判断是否与触摸</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://xiongyihui.github.io/cn/2014/05/25/hundred-hardware-projects-idea-evolution/" data-id="q5r2yi7hh33uifr2" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/cn/tags/Hardware, Capacitive Touch/">Hardware, Capacitive Touch</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/cn/2014/05/14/hello-world/" class="article-date">
@@ -81,12 +143,14 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>写字，用文字记录一些自己的所见、所闻、所思、所为，但太容易被打断了。会为写在哪里<br>而烦恼，会为选择域名而纠结，也会为网页主题而瞎折腾。然而自己关注的是写字，这些<br>显得无关紧要的东西分散了太多的注意力，是时候把注意力集中在写字上。<br>时常担心写的不好，这时候要提醒自己，写下来总比什么都没有要好吧，况且可以不断的修改，<br>不断尝试去完善。<br>从这里重新启程。</p>
+        <p>写字，用文字记录一些自己的所见、所闻、所思、所为，但太容易被打断了。会为写在哪里而<br>烦恼，会为选择域名而纠结，也会为网页主题而瞎折腾。然而自己关注的是写字，这些显得<br>无关紧要的东西分散了太多的注意力，是时候把注意力集中在写字上。</p>
+<p>时常担心写的不好，这时候要提醒自己，写下来总比什么都没有要好吧，况且可以不断的修改，<br>不断尝试去完善。</p>
+<p>在这里重新启程。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://xiongyihui.github.io/cn/2014/05/14/hello-world/" data-id="yih4hcko5v5s73ra" class="article-share-link">Share</a>
+      <a data-url="http://xiongyihui.github.io/cn/2014/05/14/hello-world/" data-id="xv4m9qfho1977lvr" class="article-share-link">Share</a>
       
       
     </footer>
@@ -104,14 +168,28 @@
     
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/cn/tags/Hardware, Capacitive Touch/">Hardware, Capacitive Touch</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/cn/tags/Hardware, Capacitive Touch/" style="font-size: NaNpx;">Hardware, Capacitive Touch</a>
+    </div>
+  </div>
+
   
     
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/cn/archives/2014/05">May 2014</a><span class="archive-list-count">1</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/cn/archives/2014/05">May 2014</a><span class="archive-list-count">2</span></li></ul>
     </div>
   </div>
 
@@ -121,6 +199,10 @@
     <h3 class="widget-title">Recents</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/cn/2014/05/25/hundred-hardware-projects-idea-evolution/">Hundred Hardware Projects: Idea Evolution</a>
+          </li>
         
           <li>
             <a href="/cn/2014/05/14/hello-world/">在这里重新启程</a>
